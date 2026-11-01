@@ -1,10 +1,10 @@
 
 // COLOQUE SEU WHATSAPP AQUI
 // Exemplo de formato: 5511999999999
-const WHATSAPP_NUMBER = "55DDDNUMERO";
+const WHATSAPP_NUMBER = "559984378163";
 
 function comprar(servico, preco) {
-  if (WHATSAPP_NUMBER === "55DDDNUMERO") {
+  if (WHATSAPP_NUMBER === "559984378163") {
     alert("O WhatsApp da loja ainda não foi configurado.");
     return;
   }
