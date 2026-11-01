@@ -1,0 +1,235 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #05050c;
+  color: white;
+}
+
+header {
+  min-height: 75px;
+  padding: 15px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  background: #080812;
+  border-bottom: 1px solid #292039;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 900;
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.logo span, footer span {
+  color: #9b24ff;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: .3s;
+}
+
+nav a:hover {
+  color: #a52aff;
+}
+
+.top-button, .main-button {
+  background: linear-gradient(90deg, #7000ff, #a000ff);
+  color: white;
+  text-decoration: none;
+  padding: 13px 22px;
+  border-radius: 9px;
+  font-weight: bold;
+}
+
+.hero {
+  min-height: 420px;
+  padding: 80px 7%;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(ellipse at 80% 50%, #4d087c 0%, transparent 45%),
+    linear-gradient(110deg, #080610, #180629 65%, #080610);
+  border-bottom: 1px solid #302044;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.tag {
+  color: #b02cff;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 6vw, 58px);
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+
+.hero h1 span {
+  color: #9d22ff;
+}
+
+.hero-content > p:not(.tag) {
+  color: #c7bfd3;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.main-button {
+  display: inline-block;
+  padding: 17px 28px;
+}
+
+.services {
+  padding: 55px 6%;
+  text-align: center;
+}
+
+.services h2, .how h2 {
+  font-size: 28px;
+}
+
+.services h2 span {
+  color: #a32aff;
+}
+
+.subtitle {
+  color: #aaa2b9;
+  margin: 12px 0 35px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: linear-gradient(145deg, #10101d, #090912);
+  border: 1px solid #343044;
+  border-radius: 12px;
+  padding: 30px 18px;
+  transition: .3s;
+}
+
+.card:hover {
+  border-color: #a020ff;
+  transform: translateY(-5px);
+  box-shadow: 0 0 18px #7800aa55;
+}
+
+.symbol {
+  color: #a020ff;
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #bcb5c8;
+  min-height: 22px;
+  margin-bottom: 15px;
+}
+
+.card strong {
+  display: block;
+  font-size: 23px;
+  margin-bottom: 22px;
+}
+
+.card button {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  padding: 14px;
+  background: linear-gradient(90deg, #6500ed, #a000ff);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card button:hover, .main-button:hover, .top-button:hover {
+  filter: brightness(1.2);
+}
+
+.how {
+  margin: 10px 6% 40px;
+  padding: 30px;
+  background: #0d0d19;
+  border: 1px solid #29263a;
+  border-radius: 12px;
+}
+
+.how h2 {
+  color: #a32aff;
+  margin-bottom: 20px;
+}
+
+.how p {
+  color: #d1cbd9;
+  margin: 12px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 15px;
+  background: #080812;
+  border-top: 1px solid #292039;
+}
+
+footer p {
+  color: #aaa2b9;
+  margin-top: 10px;
+}
+
+@media (max-width: 750px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 65px 7%;
+  }
+
+  .how {
+    padding: 22px;
+  }
+}
